@@ -1,0 +1,48 @@
+nav {
+  background-color: #FFB4B0;
+  font-size: 1.2em;
+  font-family: arial, sans-serif;
+  height: 100px;
+  border: 2px solid black;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding-top: 17px;
+
+}
+
+.left{
+  float: left;
+  margin-top: 20px;
+  background-color: #4DD7FA;
+  border: 2px solid black;
+  height: 550px;
+  width: 300px;
+
+}
+
+.right {
+  float: right;
+  border: 2px solid black;
+  width: 1090px;
+  margin-top: 20px;
+  height: 550px;
+  background-color: #FEFAC0;
+
+}
+
+.right li {
+  font-family: arial, sans-serif;
+  font-size: 1.1em;
+  list-style-type: none;
+  display: inline;
+}
+
+.song-name {
+  color: #785616;
+  font-family: arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
