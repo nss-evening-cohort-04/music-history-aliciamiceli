@@ -14,13 +14,45 @@ nav li {
 }
 
 .left{
+  font-family: arial, sans-serif;
   float: left;
   margin-top: 20px;
   background-color: #4DD7FA;
   border: 2px solid black;
   height: 550px;
   width: 300px;
+}
 
+.song-length {
+  padding-top: 25px;
+  font-size: 1.1em;
+  padding-left: 10px;
+}
+
+.album {
+  padding-top: 25px;
+  font-size: 1.1em;
+  margin-top: 10%;
+  padding-left: 10px;
+}
+
+.artist {
+  padding-top: 25px;
+  font-size: 1.1em;
+  margin-top: 10%;
+  padding-left: 10px;
+}
+
+.genre {
+  padding-top: 25px;
+  font-size: 1.1em;
+  margin-top: 10%;
+  padding-left: 10px;
+}
+
+.genre form {
+  column-count: 2;
+  padding-top: 15px;
 }
 
 .right {
@@ -31,6 +63,18 @@ nav li {
   height: 550px;
   background-color: #FEFAC0;
 
+}
+
+button {
+  display: block;
+  clear: both;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1em;
+  border-radius: 20%;
+  background-color: #eee;
+  border: 2px solid black;
 }
 
 .right li {

@@ -16,11 +16,13 @@
   </ul>
 </nav>
 <div class="left">
-Artist: <br>
-<select></select>
-Album: <br>
-<select></select>
-Genre: <br>
+<div class="song-length">Song Length:<br>
+<progress value="50" max="100"></progress><br></div>
+<div class="artist">Artist: <br>
+<select><option value="Options">Options</option></select><br></div>
+<div class="album">Album: <br>
+<select><option value="Options">Options</option></select><br></div>
+<div class="genre">Genre: <br>
 <form>
 <input type="checkbox" value="Rock">Rock<br>
 <input type="checkbox" value="Pop">Pop<br>
@@ -28,7 +30,9 @@ Genre: <br>
 <input type="checkbox" value="Classical">Classical<br>
 <input type="checkbox" value="Jazz">Jazz<br>
 <input type="checkbox" value="Hip Hop">Hip Hop<br>
+</div>
 </form>
+<button>Filter</button>
 </div>
 <div class="right">
 <ul>
