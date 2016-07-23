@@ -1,3 +1,9 @@
+.body {
+  max-width: 960px;
+  display: block;
+  margin: 0 auto;
+}
+
 nav {
   background-color: #FFB4B0;
   font-size: 1.2em;
@@ -5,6 +11,7 @@ nav {
   height: 15%;
   width: 100%;
   border: 2px solid black;
+  margin-right: 0;
 }
 
 nav li {
@@ -19,9 +26,12 @@ nav li {
   float: left;
   background-color: #4DD7FA;
   border: 2px solid black;
-  height: 75%;
-  width: 20%;
-  margin: 2%;
+  height: 550px;
+  width: 23%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .song-length {
@@ -60,9 +70,12 @@ nav li {
 
   float: right;
   border: 2px solid black;
-  width: 70%;
-  margin: 2%;
-  height: 75%;
+  width: 73%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 0;
+  height: 550px;
   background-color: #FEFAC0;
 
 }
@@ -95,10 +108,14 @@ button {
   padding-top: 20px;
 }
 
+@media (max-width: 980px) {
+  .left {
+    font-size: .8em;
+  }
+}
 
 
-
-@media (max-width: 500px){
+@media (max-width: 600px){
 
 
   nav {
@@ -125,6 +142,7 @@ button {
     display: block;
     width: 95%;
     margin: 2.5%;
+    height: 75%;
   }
 
 .song-name {
