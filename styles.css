@@ -2,25 +2,26 @@ nav {
   background-color: #FFB4B0;
   font-size: 1.2em;
   font-family: arial, sans-serif;
-  height: 100px;
+  height: 15%;
+  width: 100%;
   border: 2px solid black;
 }
 
 nav li {
   list-style-type: none;
   display: inline-block;
-  padding-top: 17px;
+  padding: auto 0;
 
 }
 
 .left{
   font-family: arial, sans-serif;
   float: left;
-  margin-top: 20px;
   background-color: #4DD7FA;
   border: 2px solid black;
-  height: 550px;
-  width: 300px;
+  height: 75%;
+  width: 20%;
+  margin: 2%;
 }
 
 .song-length {
@@ -56,11 +57,12 @@ nav li {
 }
 
 .right {
+
   float: right;
   border: 2px solid black;
-  width: 1090px;
-  margin-top: 20px;
-  height: 550px;
+  width: 70%;
+  margin: 2%;
+  height: 75%;
   background-color: #FEFAC0;
 
 }
@@ -82,6 +84,7 @@ button {
   font-size: 1.1em;
   list-style-type: none;
   display: inline;
+  padding-bottom: 10%;
 }
 
 .song-name {
@@ -91,3 +94,132 @@ button {
   font-size: 1.5em;
   padding-top: 20px;
 }
+
+
+
+
+@media (max-width: 500px){
+
+
+  nav {
+    width: 95%;
+    font-size: 1em;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: center;
+    display: inline-flex;
+  }
+
+  .left {
+   display: block;
+   width: 95%;
+   height: 25%;
+   font-size: .8em;
+   padding: 0;
+   margin: 2.5%;
+
+  }
+
+  .right {
+    font-size: .8em;
+    display: block;
+    width: 95%;
+    margin: 2.5%;
+  }
+
+.song-name {
+  font-size: 1.5em;
+  padding-top: 0;
+  margin-left: 0;
+}
+
+
+.right li {
+  width: 90%;
+  height: 90%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  padding: 0;
+}
+
+  .song-length {
+    padding: 0;
+    display: inline-flex;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+.album {
+  padding-top: 0;
+  display: inline-flex;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.artist {
+  padding-top: 0;
+  display: inline-flex;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.genre {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 0;
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+/*
+.genre form {
+  column-count: 2;
+  padding-top: 15px;
+}
+*/
+
+button {
+  padding-top: 0;
+  display: flex;
+  clear: both;
+  margin-bottom: 5%;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-top: 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
