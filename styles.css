@@ -80,6 +80,16 @@ nav li {
 
 }
 
+#songsList {
+  font-family: Arial, sans-serif;
+  list-style-type: none;
+  line-height: 2em;
+  font-size: 1.2em;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
 button {
   display: block;
   clear: both;
