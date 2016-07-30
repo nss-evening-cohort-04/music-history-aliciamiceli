@@ -1,4 +1,4 @@
-.body {
+#songsContainer {
   max-width: 960px;
   display: block;
   margin: 0 auto;
@@ -66,7 +66,7 @@ nav li {
   padding-top: 15px;
 }
 
-.right {
+#right {
 
   float: right;
   border: 2px solid black;
