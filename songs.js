@@ -45,7 +45,7 @@ function addViewFunction() {
     <li>Enter album title here:<input id='albuminput'></li>
   </ul>
   <button id="add">Add!</button>
-</div> `
+</div>`
 }
 
 songsContainer.addEventListener('click', function(e) {
