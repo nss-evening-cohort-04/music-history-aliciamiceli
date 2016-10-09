@@ -91,10 +91,10 @@ nav li {
 }
 
 button {
-  display: block;
+  display: inline-block;
   clear: both;
-  margin-top: 75px;
-  margin-left: auto;
+
+  margin-left: 20px;
   margin-right: auto;
   font-size: 1.1em;
   border-radius: 20%;
@@ -220,6 +220,7 @@ button {
 }
 
 }
+
 
 
 
