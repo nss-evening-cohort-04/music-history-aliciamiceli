@@ -1,3 +1,5 @@
+"use strict";
+
 var request = new XMLHttpRequest();
 request.open('GET', 'songs.json');
 request.send();
@@ -22,13 +24,31 @@ function runThisFunctionWhenDomIsLoaded() {
 
   }
   output.innerHTML = parseSongsToDom;
+
   document.getElementById("button0").addEventListener('click', buttonFunction);
-  document.getElementById("button1").addEventListener('click', buttonFunction);
-  document.getElementById("button2").addEventListener('click', buttonFunction);
 
   function buttonFunction() {
-    console.log()
+    console.log("click");
+    }
   }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

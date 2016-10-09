@@ -1,0 +1,26 @@
+{
+  "name": "music-history-aliciamiceli",
+  "description": "music history",
+  "main": "newsongsinactive.js",
+  "authors": [
+    "Alicia Miceli <akb.miceli@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "music",
+    "history"
+  ],
+  "homepage": "https://github.com/nss-evening-cohort-04/music-history-aliciamiceli",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
+
+

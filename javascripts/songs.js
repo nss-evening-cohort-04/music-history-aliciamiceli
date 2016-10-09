@@ -1,3 +1,5 @@
+"use strict";
+
 var listView = document.getElementById('listView');
 listView.addEventListener('click', listViewFunction);
 var songsContainer = document.getElementById("songsList");
@@ -16,10 +18,10 @@ songs.unshift("Summer of '69 - by Bryan Adams on the album Reckless");
 var songDisplay = (function (){
 
 for (var i = 0; i < songs.length; i++) {
-songsContainer.innerHTML += ("<li>" + songs[i] + "</li>")
+songsContainer.innerHTML += ("<li>" + songs[i] + "</li>");
 }
 
-}())
+}());
 
 function listViewFunction(){
 
@@ -28,7 +30,7 @@ function listViewFunction(){
   for (var i = 0; i < songs.length; i++) {
     var newSong = songs[i].replace(/>/g, "-").replace(/[*|@|(|!]/g, "");
 
-    songsContainer.innerHTML += ("<li>" + newSong + "</li>")
+    songsContainer.innerHTML += ("<li>" + newSong + "</li>");
   }
 }
 
@@ -45,7 +47,7 @@ function addViewFunction() {
     <li>Enter album title here:<input id='albuminput'></li>
   </ul>
   <button id="add">Add!</button>
-</div>`
+</div>`;
 }
 
 songsContainer.addEventListener('click', function(e) {
@@ -56,4 +58,4 @@ songsContainer.addEventListener('click', function(e) {
 
     songs[songs.length] = (title + " by " + artist + " on the album " + album);
   }
-})
+});

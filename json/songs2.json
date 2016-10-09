@@ -1,0 +1,22 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "title": "White Liar",
+      "artist": "Miranda Lambert",
+      "album": "Revolution"
+    },
+    {
+      "id": 2,
+      "title": "Formation",
+      "artist": "Beyonce",
+      "album": "Lemonade"
+    },
+    {
+      "id": 3,
+      "title": "Here",
+      "artist": "Alessia Cara",
+      "album": "Know-It-All"
+    }
+  ]
+}
