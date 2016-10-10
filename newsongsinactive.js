@@ -4,8 +4,11 @@ var request = new XMLHttpRequest();
 request.open('GET', 'songs.json');
 request.send();
 request.addEventListener('load', runThisFunctionWhenDomIsLoaded)
-var output = document.getElementById("songsList");
 var currentSong;
+
+$.ajax({url: ''})
+
+
 
 function runThisFunctionWhenDomIsLoaded() {
   var data = JSON.parse(this.responseText).songs;
@@ -23,9 +26,9 @@ function runThisFunctionWhenDomIsLoaded() {
     parseSongsToDom += `</div>`
 
   }
-  output.innerHTML = parseSongsToDom;
+  $('#songsList').html(parseSongsToDom);
 
-  document.getElementById("button0").addEventListener('click', buttonFunction);
+  $('#button0').click(buttonFunction);
 
   function buttonFunction() {
     console.log("click");

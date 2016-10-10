@@ -49,32 +49,56 @@ newRequest.send();
 newRequest.addEventListener('load', moreFunction);
 
 function moreFunction() {
-
-  console.log("more button clicked");
-  var secondData = JSON.parse(this.responseText).songs;
-  console.log("secondData", secondData);
-  var currentSongSecond;
-
-  let parseMoreSongsToDom = "";
-
-  for (let j = 0; j < 3; j++) {
-    currentSongSecond = secondData[j];
-    console.log("this is inside the second loop", currentSongSecond);
-
-    parseMoreSongsToDom += `<div id=data${j+3}>${currentSongSecond.title} `;
-      parseMoreSongsToDom += `by ${currentSongSecond.artist} `;
-      parseMoreSongsToDom += `on the album ${currentSongSecond.album}`;
-    parseMoreSongsToDom += `</div>`;
-
-  }
-
-  $('#more').click(function(){
-    $('#songsList').append(parseMoreSongsToDom);
-  });
-
+   $.ajax({ url:'json/songs2.json' }, {
+      success: function() {
+         console.log("success");
+   }
+}
+);
+}
 }
 
-}
+
+// function moreFunction() {
+// $.ajax({
+//   type: 'GET',
+//   dataType: 'JSON',
+//   url: "json/songs2.json",
+//   success: function() {
+//     $('#songsList').append("done");
+//   }
+// }
+
+// )
+// }
+
+
+
+  // console.log("more button clicked");
+  // var secondData = JSON.parse(this.responseText).songs;
+  // console.log("secondData", secondData);
+  // var currentSongSecond;
+
+  // let parseMoreSongsToDom = "";
+
+  // // for (let j = 0; j < 3; j++) {
+  // //   currentSongSecond = secondData[j];
+  // //   console.log("this is inside the second loop", currentSongSecond);
+
+  // //   parseMoreSongsToDom += `<div id=data${j+3}>${currentSongSecond.title} `;
+  // //     parseMoreSongsToDom += `by ${currentSongSecond.artist} `;
+  // //     parseMoreSongsToDom += `on the album ${currentSongSecond.album}`;
+  // //   parseMoreSongsToDom += `</div>`;
+
+  // // }
+
+  // $('#more').click(function(){
+  //   $('#songsList').append(parseMoreSongsToDom);
+  // });
+
+// }
+
+// }
 
 
 
