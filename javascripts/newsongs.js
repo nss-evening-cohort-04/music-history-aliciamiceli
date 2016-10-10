@@ -1,31 +1,39 @@
 "use strict";
 
-var request = new XMLHttpRequest();
-request.open('GET', 'json/songs.json');
-request.send();
-request.addEventListener('load', runThisFunctionWhenDomIsLoaded);
-var currentSong;
+// var request = new XMLHttpRequest();
+// request.open('GET', 'json/songs.json');
+// request.send();
+// request.addEventListener('load', runThisFunctionWhenDomIsLoaded);
+// var currentSong;
 
+$(document).ready(function (){
+  $.ajax({ url: 'json/songs.json',
+    success: function(data1) {
+      console.log("data1", data1.songs);
 
-function runThisFunctionWhenDomIsLoaded() {
   /*jshint validthis:true*/
-  var data = JSON.parse(this.responseText).songs;
 
-  var parseSongsToDom = "";
+
 
   for (var i = 0; i < 3; i++) {
-    currentSong = data[i];
-    console.log("this is inside the for loop", currentSong);
+   let currentSong = data1.songs[i];
+    console.log("this is inside the for loop", data1.songs[i]);
+  let parseSongsToDom = "";
+  console.log("parseSongsToDom", parseSongsToDom);
 
-    parseSongsToDom += `<div id=data${i}>${currentSong.title} `;
+    parseSongsToDom = `<div id=data${i}>${currentSong.title} `;
       parseSongsToDom += `by ${currentSong.artist} `;
       parseSongsToDom += `on the album ${currentSong.album}`;
       parseSongsToDom += `<button id=button${i}>Delete</button>`;
     parseSongsToDom += `</div>`;
 
   }
+    }
+  })
 
   $('#songsList').html(parseSongsToDom);
+
+})
 
   $("#button0").click(buttonFunction0);
   $("#button1").click(buttonFunction1);
@@ -43,19 +51,38 @@ function runThisFunctionWhenDomIsLoaded() {
     $('#data2').remove();
   }
 
-var newRequest = new XMLHttpRequest();
-newRequest.open('GET', 'json/songs2.json');
-newRequest.send();
-newRequest.addEventListener('load', moreFunction);
+$('#more').click(moreFunction);
+
 
 function moreFunction() {
-   $.ajax({ url:'json/songs2.json' }, {
-      success: function() {
-         console.log("success");
-   }
+   $.ajax({ url:'json/songs2.json',
+      success: function(data) {
+         console.log("data", data.songs);
+
+let parseMoreSongsToDom = "";
+
+for (let j=0; j < 3; j++) {
+  console.log("data.songs[j]", data.songs[j]);
+ let currentSongSecond = data.songs[j]
+
+    parseMoreSongsToDom += `<div id=data${i}>${currentSongSecond.title} `;
+      parseMoreSongsToDom += `by ${currentSongSecond.artist} `;
+      parseMoreSongsToDom += `on the album ${currentSongSecond.album}`;
+    parseMoreSongsToDom += `</div>`;
+
+console.log("parseMoreSongsToDom", parseMoreSongsToDom);
+
+}
+
+$('#songsList').append(parseMoreSongsToDom)
+
+
+
+
+
+ }
 }
 );
-}
 }
 
 
